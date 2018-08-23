@@ -8,7 +8,7 @@ public class Main {
             int x = null != l1 ? l1.val : 0;
             int y = null != l2 ? l2.val : 0;
             int sum = x + y + div;
-            div = sum / 10;
+            div = sum / 10; //can be only 1
             current.next = new ListNode(sum % 10);
             if (null != l1)  {
                 l1 = l1.next;
